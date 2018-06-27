@@ -1,0 +1,33 @@
+package test;
+
+import java.util.ArrayList;
+
+/**
+ *2. Write a program to remove duplicate in a List.
+ * @author
+ *
+ */
+public class FindTwoSumElements {
+	
+	public static void main(String args[]) {
+		int[] arr = {1,7,3,9,5};
+        int sum = 16;
+        System.out.println("Sum of Elements Index:"+twoSum(arr,sum));
+	}
+
+	public static int[] twoSum(int[] arr, int sum) {
+		
+        for(int i=0;i<arr.length; i++) {
+        	int a=arr[i];
+        	int b=arr[i+1];
+        	if(a+b==sum)
+        	{
+        		int[] index = {i,i+1};
+        		return index;
+        	}
+        }
+        
+        // find the two elements in the array. there sum = 16 and print the indexes.
+        return null;
+    }
+}

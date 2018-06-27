@@ -1,0 +1,36 @@
+package test;
+
+import java.util.ArrayList;
+
+/**
+ *2. Write a program to remove duplicate in a List.
+ * @author
+ *
+ */
+public class RemoveDuplicates {
+	
+	public static void main(String args[]) {
+		ArrayList<Integer> al=new ArrayList<>();
+		al.add(1);
+		al.add(1);
+		al.add(3);
+		al.add(21);
+		al.add(13);
+		al.add(13);
+		System.out.println(al);
+		removeDuplicateValue(al);
+		System.out.println(al);
+	}
+
+	private static ArrayList<Integer> removeDuplicateValue(ArrayList<Integer> al) {
+		for(int i=1; i< al.size(); i++) {
+			Integer a1 = al.get(i);
+			Integer a2 = al.get(i-1);
+	        if (a1.equals(a2)) {
+	            al.remove(a1);
+	        }	
+		}
+		return al;
+	}
+
+}

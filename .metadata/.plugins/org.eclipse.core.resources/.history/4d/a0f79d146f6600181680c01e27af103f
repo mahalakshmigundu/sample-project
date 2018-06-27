@@ -1,0 +1,28 @@
+package test;
+
+import java.util.Scanner;
+
+public class Palindrome {
+	
+	private static Scanner s;
+
+	public static void main(String args[]) {
+		System.out.println("Enter the String:");
+		s = new Scanner(System.in);
+		String str = s.nextLine();
+        stringPalindrome(str);
+	}
+	
+	static void stringPalindrome(String str) {
+
+		String b = "";
+		for(int i=str.length()-1; i>=0;i--) {
+			b=b+str.charAt(i);
+		}
+		if(str.equalsIgnoreCase(b)) {
+			System.out.println(str+" it is a palindrome");
+		}else {
+			System.out.println(str+" it is not a palindrome");
+		}
+	}
+}

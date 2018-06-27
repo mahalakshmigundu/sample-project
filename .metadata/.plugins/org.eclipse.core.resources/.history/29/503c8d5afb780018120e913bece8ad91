@@ -1,0 +1,42 @@
+
+import java.io.*;
+
+
+// Write a method which takes 3 parameters
+// Param 1 : String S1
+// Param 2 : String S2
+// Param 3 : String S3
+// Replace all S2 in S1 with S3
+
+// E.g. S1: MyNameIsApple.IamRed
+// S2: am
+// S3: AM123
+// output: MyNAM123eIsApple.IAM123Red
+
+
+
+class MyCode {
+  public static void main (String[] args) {
+    System.out.println("Hello Java");
+    System.out.println("My String"+myString("MyNameIsApple.IamRed","am","AM123"));
+  }
+  
+  
+  public static StringBuilder myString(String s1, String s2, String s3){      
+      char[] c1=s1.toChars;
+      char[] c2=s2.toChars;
+      StringBuilder s =new StringBuilder();
+      for(int i=0; i<c1.length; i++){
+        for(int j=0;j<c2.length; j++){
+         if(c1[i]==c2[j]){
+              
+          }
+          else{
+              s.append(c1[i]);
+          } 
+        }
+        
+      }
+    return s;
+  }
+}

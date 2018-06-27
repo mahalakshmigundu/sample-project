@@ -1,0 +1,18 @@
+package datastructures.stack;
+
+public class StringReverse {
+	public static void main(String[] arg) {
+		String s ="Hello";
+		StackStringReverse thisStack=new StackStringReverse(s.length());
+		for(int i=0;i<s.length();i++) {
+			char c=s.charAt(i);
+			thisStack.push(c);
+		}
+		String result="";
+		while (!thisStack.isEmpty()) {
+			char value=thisStack.pop();	
+			result=result+value;
+		}
+		System.out.println(result);
+	}
+}

@@ -1,0 +1,25 @@
+package test;
+
+import java.awt.List;
+
+/**
+ *2. Write a program to remove duplicate in a List.
+ * @author
+ *
+ */
+public class RemoveDuplicates {
+	
+
+	public static void main(String args[]) {
+		List ls=new List();
+		
+		ls.add("a");
+		ls.add("b");
+		ls.add("c");
+		ls.add("a");
+		ls.add("a");
+		ls.add("a");
+		
+	}
+
+}

@@ -1,0 +1,32 @@
+package test;
+
+public class TestFile {
+	
+	public int add(int a, int b) {
+		return a+b;
+	}
+	
+	public int sub(int a, int b) {
+		return a-b;
+	}
+	
+	public int multiple(int a, int b) {
+		return a*b;
+	}
+	
+	public int common(int a, int b,String c) {
+		if("+".equals(c)) {
+//			 
+		}
+		return null;
+	}
+	
+	public static void main(String args[]) {
+		TestFile test = new TestFile();
+		
+		System.out.println("Adding two number "+ test.add(10, 2));
+		System.out.println("Subtraction of  two number "+ test.sub(10, 2));
+		System.out.println("Multiplication of two number "+ test.multiple(10, 2));
+		System.out.println("Multiplication of two number "+ test.multiple(10, 2));
+	}
+}

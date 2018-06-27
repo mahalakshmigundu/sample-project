@@ -1,0 +1,20 @@
+package test;
+
+import java.awt.List;
+import java.util.ArrayList;
+
+/**
+ *3. Reverse the string.
+ * @author
+ *
+ */
+public class RemoveDuplicates {
+	
+
+	public static void main(String args[]) {
+		List ls=new ArrayList<>();
+		
+		
+	}
+
+}

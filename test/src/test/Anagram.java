@@ -1,0 +1,31 @@
+package test;
+
+import java.util.Scanner;
+
+/**
+ * Validate Anagram.
+ * 
+ * @author
+ *
+ */
+public class Anagram {
+
+	private static Scanner s;
+
+	public static void main(String args[]) {
+		s = new Scanner(System.in);
+		System.out.println("Enter the anagram String:");
+		String s1 = s.nextLine();
+		System.out.println("Enter the String:");
+		String s2 = s.nextLine();
+		System.out.println(isAnagram(s1,s2));
+	}
+
+	public static boolean isAnagram(String s1, String s2) {
+		if(s1.length()!=s2.length()) {
+			return false;
+		}
+		return true;
+
+	}
+}
